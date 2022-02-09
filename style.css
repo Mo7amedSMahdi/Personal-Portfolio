@@ -135,6 +135,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 .header__nav-container__mobile_menu {
   display: none;
 }
@@ -143,12 +144,15 @@ header {
   header {
     padding: 2rem 3rem;
   }
+
   .header__nav-container__mobile_menu {
     display: flex;
   }
+
   .header__nav-container__mobile_menu img {
     width: 32px;
   }
+
   .header__nav-container {
     display: none;
   }
@@ -156,6 +160,7 @@ header {
   .header__brand-container {
     margin-left: 0;
   }
+
   .intro__container {
     padding: 32% 15%;
     border-radius: 0 0 0 100px;
