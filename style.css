@@ -2,7 +2,7 @@
 
 :root {
   --font-family: "Poppins", sans-serif;
-  --color-bg: #f4f5f7;
+  --color-bg: #f7f7f9;
   --color-white: #fff;
   --color-footer: #6070ff;
   --color-primary-btn: #4053fc;
@@ -64,7 +64,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 4rem;
+  padding: 2%;
   background-color: var(--color-white);
 }
 
@@ -103,21 +103,21 @@ header {
 .intro__container h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 40px;
   line-height: 60px;
 }
 
 .intro__container p {
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
-  line-height: 28px;
-  margin-top: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 14px;
   color: var(--color-text-semi-dark);
 }
 
 .intro__container-connect_btn {
-  margin-top: 1.5rem;
+  margin-top: 14px;
   color: var(--color-subtext);
   font-style: normal;
   font-weight: normal;
@@ -126,7 +126,7 @@ header {
 }
 
 .intro__container-social__container {
-  margin-top: 1.5rem;
+  margin-top: 14px;
   min-width: 170px;
   max-width: 300px;
   list-style: none;
@@ -138,6 +138,7 @@ header {
 
 .header__nav-container__mobile_menu {
   display: none;
+  list-style: none;
 }
 
 @media screen and (max-width: 550px) {
@@ -162,7 +163,8 @@ header {
   }
 
   .intro__container {
-    padding: 32% 15%;
-    border-radius: 0 0 0 100px;
+    padding: 114px 24px;
+    background-image: url("./images/header_background_mobile.png");
+    border-radius: 0 0 0 80px;
   }
 }
