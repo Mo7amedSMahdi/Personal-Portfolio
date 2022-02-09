@@ -5,9 +5,13 @@
 This is my pesonal Website and Portfolio that list all my profissional skils, Resume and the awsome work.
 
 # Screen Shots
-> Desktop Version
+
+## Desktop Version
+
 ![screenshot](./images/ScreenShots/ScreenShot1.png)
-> Mobile Version
+
+## Mobile Version
+
 ![screenshot](./images/ScreenShots/mobile-ScreenShot1.png)
 
 ## Built With &hearts;
