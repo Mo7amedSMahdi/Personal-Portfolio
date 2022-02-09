@@ -4,6 +4,7 @@
   --font-family: "Poppins", sans-serif;
 
   --color-bg: #f4f5f7;
+  --color-white: #fff;
   --color-footer: #6070ff;
   --color-primary-btn: #4053fc;
   --color-blog: #042c54;
@@ -18,7 +19,7 @@
   padding: 0;
   scroll-behavior: smooth;
   font-family: var(--font-family);
-  color: #fff;
+  color: var(--color-text-title);
 }
 
 body {
@@ -54,4 +55,30 @@ a {
   .section--margin {
     margin: 4rem 2rem;
   }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background-color: var(--color-white);
+}
+
+.header__brand-container {
+  flex: 1;
+  margin-left: 4rem;
+}
+.header__brand-container img {
+  width: 76px;
+  height: 20px;
+}
+.header__nav-container {
+  flex: 0.4;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 2rem;
 }
