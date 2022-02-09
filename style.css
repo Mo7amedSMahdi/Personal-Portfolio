@@ -135,3 +135,28 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.header__nav-container__mobile_menu {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    padding: 2rem 3rem;
+  }
+  .header__nav-container__mobile_menu {
+    display: flex;
+  }
+  .header__nav-container__mobile_menu img {
+    width: 32px;
+  }
+  .header__nav-container {
+    display: none;
+  }
+
+  .header__brand-container {
+    margin-left: 0;
+  }
+  .intro__container {
+    border-radius: 0 0 0 100px;
+  }
+}
