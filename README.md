@@ -6,7 +6,8 @@ This is my pesonal Website and Portfolio that list all my profissional skils, Re
 
 # Screen Shots
 
-> more screenshots coming later in the project
+![screenshot](./images/ScreenShots/ScreenShot1.png)
+![screenshot](./images/ScreenShots/mobile-ScreenShot1.png)
 
 ## Built With &hearts;
 
