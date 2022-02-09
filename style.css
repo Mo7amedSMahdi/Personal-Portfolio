@@ -11,3 +11,47 @@
   --color-subtext: #7f8cff;
   --color-text: #6b778c;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  color: #fff;
+}
+
+body {
+  background: var(--color-bg);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section--padding {
+    padding: 4rem;
+  }
+  .section--margin {
+    margin: 4rem;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .section--padding {
+    padding: 4rem 2rem;
+  }
+  .section--margin {
+    margin: 4rem 2rem;
+  }
+}
