@@ -2,7 +2,6 @@
 
 :root {
   --font-family: "Poppins", sans-serif;
-
   --color-bg: #f4f5f7;
   --color-white: #fff;
   --color-footer: #6070ff;
@@ -45,6 +44,7 @@ a {
   .section--padding {
     padding: 4rem;
   }
+
   .section--margin {
     margin: 4rem;
   }
@@ -54,6 +54,7 @@ a {
   .section--padding {
     padding: 4rem 2rem;
   }
+
   .section--margin {
     margin: 4rem 2rem;
   }
@@ -71,10 +72,12 @@ header {
   flex: 1;
   margin-left: 4rem;
 }
+
 .header__brand-container img {
   width: 76px;
   height: 20px;
 }
+
 .header__nav-container {
   flex: 0.4;
   display: flex;
@@ -84,6 +87,7 @@ header {
   align-items: center;
   margin-right: 2rem;
 }
+
 .intro__container {
   display: flex;
   flex-direction: column;
@@ -95,6 +99,7 @@ header {
   padding: 15% 15%;
   border-radius: 0 0 0 160px;
 }
+
 .intro__container h1 {
   font-style: normal;
   font-weight: bold;
@@ -110,6 +115,7 @@ header {
   margin-top: 1.5rem;
   color: var(--color-text-semi-dark);
 }
+
 .intro__container-connect_btn {
   margin-top: 1.5rem;
   color: var(--color-subtext);
@@ -118,10 +124,11 @@ header {
   font-size: 1rem;
   line-height: 28px;
 }
+
 .intro__container-social__container {
   margin-top: 1.5rem;
   min-width: 170px;
-  max-width: 300;
+  max-width: 300px;
   list-style: none;
   display: flex;
   flex-direction: row;
