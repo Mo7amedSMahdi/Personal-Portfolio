@@ -11,6 +11,7 @@
   --color-text-title: #091e42;
   --color-subtext: #7f8cff;
   --color-text: #6b778c;
+  --color-text-semi-dark: #344563;
 }
 
 * {
@@ -29,6 +30,7 @@ body {
 a {
   color: unset;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .section__padding {
@@ -81,4 +83,48 @@ header {
   justify-content: space-around;
   align-items: center;
   margin-right: 2rem;
+}
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  background-image: url("./images/header_background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: flex-start;
+  padding: 15% 15%;
+  border-radius: 0 0 0 160px;
+}
+.intro__container h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 60px;
+}
+
+.intro__container p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 28px;
+  margin-top: 1.5rem;
+  color: var(--color-text-semi-dark);
+}
+.intro__container-connect_btn {
+  margin-top: 1.5rem;
+  color: var(--color-subtext);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 28px;
+}
+.intro__container-social__container {
+  margin-top: 1.5rem;
+  min-width: 170px;
+  max-width: 300;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
