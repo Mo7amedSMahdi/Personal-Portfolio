@@ -94,7 +94,7 @@ header {
   background-color: var(--color-white);
   background-image: url("./images/header_background.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   align-items: flex-start;
   padding: 15% 15%;
   border-radius: 0 0 0 160px;
@@ -157,6 +157,7 @@ header {
     margin-left: 0;
   }
   .intro__container {
+    padding: 32% 15%;
     border-radius: 0 0 0 100px;
   }
 }
