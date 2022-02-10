@@ -10,7 +10,7 @@
   --color-text-title: #091e42;
   --color-subtext: #7f8cff;
   --color-text: #6b778c;
-  --color-text-semi-dark: #344563;
+  --color-text-p: #344563;
 }
 
 * {
@@ -45,7 +45,7 @@ input[type="reset"] {
 }
 
 .section__padding {
-  padding: 4rem 6rem;
+  padding: 142px 142px;
 }
 
 .section__margin {
@@ -54,17 +54,17 @@ input[type="reset"] {
 
 @media screen and (min-width: 768px) {
   .section__padding {
-    padding: 4rem;
+    padding: 142px 142px;
   }
 
   .section__margin {
-    margin: 4rem;
+    margin: 142px 142px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .section__padding {
-    padding: 4rem 2rem;
+    padding: 114px 24px;
   }
 
   .section__margin {
@@ -125,10 +125,10 @@ header {
   font-size: 16px;
   line-height: 24px;
   margin-top: 14px;
-  color: var(--color-text-semi-dark);
+  color: var(--color-text-p);
 }
 
-.intro__container-connect_btn {
+.lets__connect-btn {
   margin-top: 14px;
   color: var(--color-subtext);
   font-style: normal;
@@ -137,7 +137,7 @@ header {
   line-height: 28px;
 }
 
-.intro__container-social__container {
+.social__links-container {
   margin-top: 14px;
   min-width: 170px;
   max-width: 300px;
@@ -279,7 +279,7 @@ header {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: var(--color-text-semi-dark);
+  color: var(--color-text-p);
   margin-top: 30px;
 }
 
@@ -355,5 +355,116 @@ header {
 
   .card__body-content button {
     margin-bottom: 12px;
+  }
+}
+
+.about__section-container {
+  display: flex;
+  background-color: var(--color-white);
+  border-radius: 0 80px 0 0;
+  column-gap: 25px;
+}
+
+.about__section-about_me {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  width: 447px;
+}
+
+.about__section-about_me h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--color-text-title);
+}
+
+.about__section-about_me p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text-p);
+}
+
+.about__section-skills {
+  width: 684px;
+}
+
+.about__section_skills-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  color: #000;
+  margin: 12px 0;
+  padding: 18px 0;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.about__section_skills-items {
+  padding: 4px 12px;
+  list-style: none;
+  margin: 5px 0;
+}
+
+.active {
+  padding: 2px 0;
+  border: none;
+}
+
+.icon {
+  float: right;
+  width: 14px;
+  padding-top: 8px;
+}
+
+.about__section_skills-languages {
+  list-style: none;
+  padding: 24px 0;
+}
+
+.about__section_skills-languages > li {
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 12px;
+  display: flex;
+  justify-items: center;
+}
+
+.about__section_skills-languages li > img {
+  width: 48px;
+  height: 48px;
+}
+
+.about__section_skills-languages > li > a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  align-self: center;
+  text-decoration: none;
+  padding: 0 12px;
+}
+
+.about__section-about_me button {
+  max-width: 190px;
+}
+
+@media only screen and (max-width: 550px) {
+  .about__section-container {
+    flex-direction: column;
+  }
+
+  .about__section-about_me {
+    max-width: 327px;
+  }
+
+  .about__section-skills {
+    max-width: 327px;
   }
 }
