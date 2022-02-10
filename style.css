@@ -445,7 +445,7 @@ header {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #253858;
+  color: var(--color-text-p);
   align-self: center;
   text-decoration: none;
   padding: 0 12px;
