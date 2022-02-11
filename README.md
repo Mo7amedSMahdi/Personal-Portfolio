@@ -6,18 +6,28 @@ This is my pesonal Website and Portfolio that list all my profissional skils, Re
 
 # Screen Shots
 
-> more screenshots coming later in the project
+## Desktop Version
+
+![screenshot](./images/ScreenShots/ScreenShot1.png)
+
+## Mobile Version
+
+![screenshot](./images/ScreenShots/mobile-ScreenShot1.png)
 
 ## Built With &hearts;
 
 - HTML
 - CSS
 
+## Live Demo
+
+[Live Demo Link](https://mo7amedsmahdi.github.io/Personal-Portfolio/)
+
 ## Getting started
 
 to run the project locally, clone the project using the command
 
-`git clone https://github.com/banlon-jones/portfolio.git`
+`git clone git@github.com:Mo7amedSMahdi/Personal-Portfolio.git`
 
 ### Run test
 
