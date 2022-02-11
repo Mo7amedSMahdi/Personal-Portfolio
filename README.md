@@ -27,7 +27,7 @@ This is my pesonal Website and Portfolio that list all my profissional skils, Re
 
 to run the project locally, clone the project using the command
 
-`git clone https://github.com/banlon-jones/portfolio.git`
+`git clone git@github.com:Mo7amedSMahdi/Personal-Portfolio.git`
 
 ### Run test
 

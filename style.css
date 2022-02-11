@@ -52,16 +52,6 @@ input[type="reset"] {
   margin: 142px 142px;
 }
 
-@media screen and (min-width: 768px) {
-  .section__padding {
-    padding: 142px 142px;
-  }
-
-  .section__margin {
-    margin: 142px 142px;
-  }
-}
-
 @media screen and (max-width: 550px) {
   .section__padding {
     padding: 114px 24px;
@@ -237,7 +227,7 @@ header {
   padding: 24px;
 }
 
-.card__body-content h1 {
+.card__body-content h3 {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -372,7 +362,7 @@ header {
   width: 447px;
 }
 
-.about__section-about_me h1 {
+.about__section-about_me h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
