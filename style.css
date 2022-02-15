@@ -486,3 +486,13 @@ header {
     max-width: 327px;
   }
 }
+/*footer style*/
+.footer{
+  background:  url(images/contact-form-bg.png);
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: var(--color-footer);
+  height: 500px;
+  border-top-left-radius: 25%;
+
+}
