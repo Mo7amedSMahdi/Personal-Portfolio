@@ -120,6 +120,30 @@ header {
   margin-right: 2rem;
 }
 
+.underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  }
+  
+  .underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  }
+  
+  .underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+
 /* Intro Section */
 
 .intro {
