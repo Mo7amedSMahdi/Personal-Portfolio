@@ -93,14 +93,17 @@ header {
   margin-left: 4rem;
   animation: rotate 3s infinite;
 }
+
 @keyframes rotate {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  50%{
+
+  50% {
     transform: rotate(180deg);
   }
-  100%{
+
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -123,26 +126,25 @@ header {
 .underline-animation {
   display: inline-block;
   position: relative;
-  color: #0087ca;
-  }
-  
-  .underline-animation:after {
-  content: '';
+}
+
+.underline-animation::after {
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: var(--color-subtext);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
-  }
-  
-  .underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    }
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 /* Intro Section */
 
@@ -185,9 +187,7 @@ header {
   font-weight: normal;
   font-size: 1rem;
   line-height: 28px;
-  transition: all 0.2s ease-in-out;
-  max-width: 170px;
-  padding: 12px;
+  max-width: 120px;
 }
 
 .social__links-container {
@@ -215,13 +215,13 @@ header {
   color: var(--color-primary-btn);
 }
 
-.lets__connect-btn:hover {
+/* .lets__connect-btn:hover {
   background-color: var(--color-primary-btn);
   color: var(--color-white);
   padding: 12px;
-  border-radius: 8px;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-}
+  transition: all 0.5s ease-in-out;
+} */
 
 @media screen and (min-width: 992px) {
   .intro__container {
