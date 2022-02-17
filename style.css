@@ -361,7 +361,7 @@ header {
   color: #fff !important;
   background-color: var(--color-primary-btn);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  transition: 0.7s;
+  transition: 0.3s;
 }
 
 .image__right {
@@ -515,6 +515,18 @@ header {
   max-width: 190px;
 }
 
+@media screen and (max-width: 1100px) {
+  .section__padding {
+    padding: 100px 95px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section__padding {
+    padding: 85px 60px;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   .about__section-container {
     flex-direction: column;
@@ -665,6 +677,7 @@ input[type="email"]::placeholder {
   background-color: var(--color-footer);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
+  transition: 0.3s;
 }
 
 .contact__form button:focus {
