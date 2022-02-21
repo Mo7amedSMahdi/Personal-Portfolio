@@ -89,23 +89,8 @@ header {
 }
 
 .header__brand-container {
-  /* flex: 1; */
+  flex: 1;
   margin-left: 4rem;
-  animation: rotate 3s infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .header__brand-container img {
