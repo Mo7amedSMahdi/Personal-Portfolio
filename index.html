@@ -28,8 +28,13 @@
             <li class=" header__nav-container__nav-item"><a class="underline-animation" href="#contact">Contact</a></li>
         </ul>
         <img id="mobile_menu_open" class="mobile_menu_open" src="./images/menu.svg" alt="hamburgar menu" />
-        <nav class="header__nav-container__mobile_menu">
-            <img src="./images/close-icon.svg" alt="mobile menu close icon" />
+        <nav id="mobile_nav" class="header__nav-container__mobile_menu hidden">
+            <img id="mobile_menu_close" src="./images/close-icon.svg" alt="mobile menu close icon" />
+            <ul class="mobile__nav">
+                <li class="mobile_nav_links"><a href="#works">Portoflio</a></li>
+                <li class="mobile_nav_links"><a href="#about">About</a></li>
+                <li class="mobile_nav_links"><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -227,7 +232,7 @@
         </div>
     </footer>
 
-    <script src="index.js" />
+    <script src="index.js"></script>
 
 </body>
 
