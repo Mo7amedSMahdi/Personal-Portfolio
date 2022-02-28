@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --font-family: "Poppins", sans-serif;
+  --font-family: 'Poppins', sans-serif;
   --color-bg: #f7f7f9;
   --color-white: #fff;
   --color-footer: #6070ff;
@@ -33,8 +33,8 @@ a {
 }
 
 button,
-input[type="submit"],
-input[type="reset"] {
+input[type='submit'],
+input[type='reset'] {
   background: none;
   color: inherit;
   border: none;
@@ -128,7 +128,7 @@ header {
   margin-right: 35px;
 }
 
-.mobile__nav {
+.mobile__nav-items {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -166,7 +166,7 @@ header {
 }
 
 .underline-animation::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -187,7 +187,7 @@ header {
 
 .intro {
   background-color: var(--color-white);
-  background-image: url("./images/header_background.png");
+  background-image: url('./images/header_background.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: content-box;
@@ -282,7 +282,7 @@ header {
 
   .intro {
     padding: 0;
-    background-image: url("./images/header_background_mobile.png");
+    background-image: url('./images/header_background_mobile.png');
     border-radius: 0 0 0 90px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -318,7 +318,7 @@ header {
 }
 
 .card::before {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 0;
   right: 0;
@@ -642,7 +642,7 @@ header {
 .footer {
   padding: 79px 75px 48px 75px;
   border-top-left-radius: 108px;
-  background: url("./images/contact-form-background-desktop.png");
+  background: url('./images/contact-form-background-desktop.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -690,8 +690,8 @@ header {
   margin-top: 15px;
 }
 
-.contact__form input[type="text"],
-input[type="email"] {
+.contact__form input[type='text'],
+input[type='email'] {
   background-color: var(--color-white);
   padding: 15px;
   font-family: var(--font-family);
@@ -703,8 +703,8 @@ input[type="email"] {
   width: 418px;
 }
 
-.contact__form input[type="text"]::placeholder,
-input[type="email"]::placeholder {
+.contact__form input[type='text']::placeholder,
+input[type='email']::placeholder {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: normal;
@@ -772,7 +772,7 @@ input[type="email"]::placeholder {
 
 @media screen and (max-width: 550px) {
   .footer {
-    background: url("./images/contact-form-bg.png");
+    background: url('./images/contact-form-bg.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -795,8 +795,8 @@ input[type="email"]::placeholder {
     align-items: start;
   }
 
-  .contact__form input[type="text"],
-  input[type="email"] {
+  .contact__form input[type='text'],
+  input[type='email'] {
     border-radius: 8px;
     width: 91%;
   }
