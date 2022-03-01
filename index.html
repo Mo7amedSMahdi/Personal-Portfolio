@@ -18,222 +18,254 @@
 </head>
 
 <body>
-    <header>
-        <div class="header__brand-container">
-            <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
-        </div>
-        <ul class="header__nav-container">
-            <li class=" header__nav-container__nav-item"><a class="underline-animation" href="#works">Portoflio</a></li>
-            <li class=" header__nav-container__nav-item"><a class="underline-animation" href="#about">About</a></li>
-            <li class=" header__nav-container__nav-item"><a class="underline-animation" href="#contact">Contact</a></li>
-        </ul>
-        <img id="mobile_menu_open" class="mobile_menu_open" src="./images/menu.svg" alt="hamburgar menu" />
-        <nav id="mobile_nav" class="header__nav-container__mobile_menu hidden">
-            <img id="mobile_menu_close" src="./images/close-icon.svg" alt="mobile menu close icon" />
-            <ul id="mobile__nav-items" class="mobile__nav-items">
-                <li class="mobile_nav_links"><a href="#works">Portoflio</a></li>
-                <li class="mobile_nav_links"><a href="#about">About</a></li>
-                <li class="mobile_nav_links"><a href="#contact">Contact</a></li>
+    <header class="flex">
+        <a class="heder__logo" href="#"><img src="./images/logo.png" alt="website logo" /></a>
+        <nav>
+            <ul class="nav nav-desktop">
+                <li><a href="">Portoflio</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button id="btn-menu" class="btn btn--icon hidden" data-toggle="collapse" data-target="#"><i
+                class="icon icon-menu"></i></button>
+        <nav class="hidden">
+            <ul class="nav nav-mobile hidden">
+                <li><a href="">Portoflio</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero__title">
+                <h1>I’m Alexandra
+                    Glad to see you!</h1>
+            </div>
+            <div class="hero__content">
+                <p>I’m a software developer! I can help you build a product , feature or website Look through some of my
+                    work and
+                    experience! If you like what you see and have a project you need coded, don’t hestiate to contact
+                    me.</p>
+            </div>
+            <div class="hero__btn">
+                <button class="btn btn--text">LET’S CONNECT</button>
+            </div>
+            <div class="social__links">
+                <ul>
+                    <li><a href=""><img src="" alt="twitter"></a></li>
+                    <li><a href=""><img src="" alt="linkedin"></a></li>
+                    <li><a href=""><img src="" alt="medium"></a></li>
+                    <li><a href=""><img src="" alt="github"></a></li>
+                    <li><a href=""><img src="" alt="angellist"></a></li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="intro">
-        <div class="intro__container">
-            <h1>I'm Mohammed <br /> Glad to see you!</h1>
-            <p>I’m a software developer! I can help you build a product , feature or website Look through some of my
-                work and
-                experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-            </p>
-            <a href="#contact" class="lets__connect-btn underline-animation">LET’S CONNECT</a>
-            <ul class="social__links-container">
-                <li class="scale_up"><a href="twitter.com/"><img src="./images/twitter.svg" alt="Twiiter logo" /></a>
-                </li>
-                <li class="scale_up"><a href="linkedin.com/"><img src="./images/Linkedin.svg" alt="LinkedIn logo" /></a>
-                </li>
-                <li class="scale_up"><a href="medium.com/"><img src="./images/medium.svg" alt="Medium logo" /></a></li>
-                <li class="scale_up"><a href="githubusercontent.com/"><img src="./images/github.svg"
-                            alt="GitHub logo" /></a></li>
-                <li class="scale_up"><a href="angellist.com/"><img src="./images/angellist.svg"
-                            alt="angellist logo" /></a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section__margin" id="works">
-        <div class="work__container-items_container">
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img">
-                        <img src="./images/Portoflio-Cards/Portfolio1.png" alt="" />
+        <section id="works" class="works">
+            <div class="works__cards">
+                <div class="work_card">
+                    <div class="card__img">
+                        <img src="" alt=""></img>
                     </div>
-                    <div class="card__body-content">
-                        <h3>Tonic</h3>
-                        <div class="card__body-company">
+                    <div class="card__content">
+                        <div class="content__title">
+                            <h3>Tonic</h3>
+                        </div>
+                        <div class="content__experince">
                             <h4>CANOPY</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Back End Dev</li>
-                                <li>2015</li>
+                            <p>Back End Dev</p>
+                            <p>2015</p>
+                        </div>
+                        <div class="content__body">
+                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                        </div>
+                        <div class="content__skills">
+                            <ul class="skills__list">
+                                <li>html</li>
+                                <li>css</li>
+                                <li>javaScript</li>
                             </ul>
                         </div>
-                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
+                        <button class="btn btn--primary">See Project</button>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img image__right">
-                        <img src="./images/Portoflio-Cards/Portfolio2.png" alt="" />
+                <div class="work_card">
+                    <div class="card__img">
+                        <img src="" alt=""></img>
                     </div>
-                    <div class="card__body-content">
-                        <h3>Multi-Post Stories</h3>
-                        <div class="card__body-company">
+                    <div class="card__content">
+                        <div class="content__title">
+                            <h3>Multi-Post Stories</h3>
+                        </div>
+                        <div class="content__experince">
                             <h4>FACEBOOK</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Full Stack Dev</li>
-                                <li>2015</li>
+                            <p>Full Stack Dev</p>
+                            <p>2015</p>
+                        </div>
+                        <div class="content__body">
+                            <p>Experimental content creation feature that allows users to add to an existing story over
+                                the course of a day without
+                                spamming their friends.</p>
+                        </div>
+                        <div class="content__skills">
+                            <ul class="skills__list">
+                                <li>html</li>
+                                <li>Ruby on rails</li>
+                                <li>css</li>
+                                <li>javaScript</li>
                             </ul>
                         </div>
-                        <p>Experimental content creation feature that allows users to add to an existing story over the
-                            course of a day without
-                            spamming their friends.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">Ruby on Rails</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
+                        <button class="btn btn--primary">See Project</button>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img">
-                        <img src="./images/Portoflio-Cards/Portfolio3.png" alt="" />
+                <div class="work_card">
+                    <div class="card__img">
+                        <img src="" alt=""></img>
                     </div>
-                    <div class="card__body-content">
-                        <h3>Facebook 360</h3>
-                        <div class="card__body-company">
+                    <div class="card__content">
+                        <div class="content__title">
+                            <h3>Facebook 360</h3>
+                        </div>
+                        <div class="content__experince">
                             <h4>FACEBOOK</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Full Stack Dev</li>
-                                <li>2015</li>
+                            <p>Full Stack Dev</p>
+                            <p>2015</p>
+                        </div>
+                        <div class="content__body">
+                            <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to
+                                discover and enjoy 360 photos and
+                                videos on Gear VR.</p>
+                        </div>
+                        <div class="content__skills">
+                            <ul class="skills__list">
+                                <li>html</li>
+                                <li>Ruby on rails</li>
+                                <li>css</li>
+                                <li>javaScript</li>
                             </ul>
                         </div>
-                        <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to discover
-                            and enjoy 360 photos and
-                            videos on Gear VR.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">Ruby on Rails</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
+                        <button class="btn btn--primary">See Project</button>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card__body">
-                    <div class="card__body-img image__right">
-                        <img src="./images/Portoflio-Cards/Portfolio1.png" alt="" />
+                <div class="work_card">
+                    <div class="card__img">
+                        <img src="" alt=""></img>
                     </div>
-                    <div class="card__body-content">
-                        <h3>Uber Navigation</h3>
-                        <div class="card__body-company">
+                    <div class="card__content">
+                        <div class="content__title">
+                            <h3>Uber Navigation</h3>
+                        </div>
+                        <div class="content__experince">
                             <h4>Uber</h4>
-                            <ul class="card__body-company__rols">
-                                <li>Lead Developer</li>
-                                <li>2018</li>
+                            <p>Lead Developer</p>
+                            <p>2018</p>
+                        </div>
+                        <div class="content__body">
+                            <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most
+                                expensive computer: your car.</p>
+                        </div>
+                        <div class="content__skills">
+                            <ul class="skills__list">
+                                <li>html</li>
+                                <li>Ruby on rails</li>
+                                <li>css</li>
+                                <li>javaScript</li>
                             </ul>
                         </div>
-                        <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most
-                            expensive computer: your car.</p>
-                        <ul class="card__body-tags">
-                            <li><a href="#">html</a></li>
-                            <li><a href="#">Ruby on Rails</a></li>
-                            <li><a href="#">css</a></li>
-                            <li><a href="#">javascript</a></li>
-                        </ul>
-                        <button type="submit" class="button__outlined">See Project</button>
+                        <button class="btn btn--primary">See Project</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about__section-container section__padding" id="about">
-        <div class="about__section-about_me">
-            <h2>About <br /> Myself</h2>
-            <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of
-                my work and
-                experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-            </p>
-            <a class="lets__connect-btn" href="#">LET’S CONNECT</a>
-            <ul class="social__links-container">
-                <li><a href="twitter.com/"><img src="./images/twitter.svg" alt="Twiiter logo" /></a></li>
-                <li><a href="linkedin.com/"><img src="./images/Linkedin.svg" alt="LinkedIn logo" /></a></li>
-                <li><a href="medium.com/"><img src="./images/medium.svg" alt="Medium logo" /></a></li>
-                <li><a href="githubusercontent.com/"><img src="./images/github.svg" alt="GitHub logo" /></a></li>
-                <li><a href="angellist.com/"><img src="./images/angellist.svg" alt="angellist logo" /></a></li>
-            </ul>
-            <button type="submit" class="button__outlined">Get my resume</button>
-        </div>
-        <div class="about__section-skills">
-            <ul class="about__section_skills-items">
-                <li class="about__section_skills-item active">Languages <img class="icon" src="images/arrow-down.svg"
-                        alt="arrow down" />
-                    <ul class="about__section_skills-languages">
-                        <li>
-                            <img src="images/javascript.png" alt="Javascript logo">
-                            <a href="#">JavaSript</a>
-                        </li>
-                        <li>
-                            <img src=" images/html.png" alt="HTML5 logo">
-                            <a href="#">HTML</a>
-                        </li>
-                        <li>
-                            <img src="images/css.png" alt="CSS3 logo">
-                            <a href="#">CSS</a>
-                        </li>
+        <section id="about" class="about">
+            <div class="about__content">
+                <div class="about__title">
+                    <h2>About
+                        Myself</h2>
+                </div>
+                <div class="about__body">
+                    <p>Hello I’m a software developer! I can help you build a product , feature or website Look through
+                        some of my work and
+                        experience! If you like what you see and have a project you need coded, don’t hestiate to
+                        contact me.</p>
+                </div>
+                <div class="about__connect">
+                    <button class="btn btn--text">LET’S CONNECT</button>
+                </div>
+                <div class="social__links">
+                    <ul>
+                        <li><a href=""><img src="" alt=""></a></li>
+                        <li><a href=""><img src="" alt=""></a></li>
+                        <li><a href=""><img src="" alt=""></a></li>
+                        <li><a href=""><img src="" alt=""></a></li>
+                        <li><a href=""><img src="" alt=""></a></li>
                     </ul>
-                </li>
-                <li class="about__section_skills-item">Frameworks <img class="icon" src="images/arrow-right.svg"
-                        alt="right angle" />
-                </li>
-                <li class="about__section_skills-item">Skills <img class="icon" src="images/arrow-right.svg"
-                        alt="right angle" />
-                </li>
-            </ul>
-        </div>
-    </section>
+                </div>
+                <div class="about__btn">
+                    <button class="btn btn--primary">Get My Resume</button>
+                </div>
+            </div>
+            <div class="about__skills">
+                <div class="skills__tabs">
+                    <div class="skill__tab">
+                        <div class="tab__header">
+                            <h3>Langguages</h3>
+                            <button class="btn btn--icon"></button>
+                        </div>
+                        <div class="tab__content">
+                            <div class="content__skill">
+                                <img src="" alt="">
+                                <p>JavaSript</p>
+                            </div>
+                            <div class="content__skill">
+                                <img src="" alt="">
+                                <p>HTML</p>
+                            </div>
+                            <div class="content__skill">
+                                <img src="" alt="">
+                                <p>Css</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill__tab">
+                        <div class="tab__header">
+                            <h3>Frameworks</h3>
+                            <button class="btn btn--icon"></button>
+                        </div>
+                    </div>
+                    <div class="skill__tab">
+                        <div class="tab__header">
+                            <h3>Skills</h3>
+                            <button class="btn btn--icon"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <footer class="footer" id="contact">
-        <div class="footer__container">
-            <h2>
-                Contact Me
-            </h2>
-            <p> If you have an application you are interested in developing, a feature that you need built or a project
-                that
-                needs coding. I’d love to help with it </p>
-            <form class="contact__form" method="post" action="https://formspree.io/f/xeqngaoy">
-                <input type="text" maxlength="30" name="full_name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <textarea name="msg" placeholder="Write your message here " maxlength="500" required></textarea>
-                <button type="submit">Get It Touch</button>
+    <footer>
+        <div class="footer__title">
+            <h2>Contact me</h2>
+        </div>
+        <div class="footer__content">
+            <p>If you have an application you are interested in developing, a feature that you need built or a project
+                that needs
+                coding. I’d love to help with it</p>
+        </div>
+        <div class="footer__contact">
+            <form>
+                <input type="text" placeholder="Enter Full Name">
+                <input type="email" placeholder="Enter Email Address">
+                <textarea placeholder="Write your message here "></textarea>
+                <button class="btn btn--send">Get It Touch</button>
             </form>
         </div>
     </footer>
-
-    <script src="index.js"></script>
-
 </body>
 
 </html>
