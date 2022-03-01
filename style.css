@@ -806,3 +806,102 @@ input[type='email']::placeholder {
     width: 100%;
   }
 }
+
+/* modal */
+
+.modal__container {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(99, 119, 139, 0.596);
+  backdrop-filter: blur(10px);
+  top: 0;
+  height: 100%;
+  overflow-x: scroll;
+  padding: 40px 0;
+}
+
+.modal {
+  padding: 24px 24px;
+  max-width: 85%;
+  background-color: #fff;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+.modal__header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__title {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--color-text-title);
+}
+
+.modal__header__top img {
+  cursor: pointer;
+}
+
+.modal__header__content {
+  display: flex;
+  gap: 26px;
+  justify-content: flex-start;
+  margin-top: 12px;
+}
+
+.modal__img {
+  padding: 0;
+  margin: 0;
+}
+
+.modal__img img {
+  width: 100%;
+  max-height: 586px;
+  margin: 28px 0;
+  padding: 0;
+  object-fit: none; /* Do not scale the image */
+  object-position: center;
+  border-radius: 8px;
+}
+
+.modal__body {
+  display: flex;
+  gap: 24px;
+}
+
+.modal__description p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-text-p);
+}
+
+.button__group {
+  display: inline-flex;
+  gap: 12px;
+}
+.button__group a {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  width: max-content;
+}
+
+.icon-live {
+  content: url('./images/icon-live.svg');
+  margin: 8px 16px;
+}
+
+.icon-github {
+  content: url('./images/github-blue.svg');
+  margin: 8px 16px;
+}
