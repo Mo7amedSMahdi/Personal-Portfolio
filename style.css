@@ -739,6 +739,20 @@ header {
   margin-top: 15px;
 }
 
+.form__control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.form__control small {
+  color: #731c24;
+}
+
 .contact__form input[type='text'],
 input[type='email'] {
   background-color: var(--color-white);

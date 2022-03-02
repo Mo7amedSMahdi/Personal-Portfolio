@@ -5,6 +5,7 @@ const li = mobileNav.getElementsByTagName('a');
 const cardsContainer = document.getElementById('cardsContainer');
 const buttons = cardsContainer.getElementsByTagName('button');
 const modalContainer = document.getElementById('modal');
+
 let i;
 let j;
 
@@ -182,3 +183,45 @@ function LoadProjects() {
 }
 
 document.addEventListener('DOMContentLoaded', LoadProjects, false);
+
+const form = document.getElementById('contactForm');
+const emailFormat = 'Please enter a valid email adress';
+
+function hasValue(input) {
+  if (input === '') {
+    return false;
+  }
+  return true;
+}
+
+function showMessage(input, message) {
+  const msg = input.parentNode.querySelector('small');
+  msg.innerText = message;
+}
+
+function validateEmail(input, emailFormat) {
+  const email = input.value.trim();
+  if (!hasValue(input.value)) {
+    return false;
+  }
+  if (email.match(/[A-Z]/g)) {
+    return showMessage(input, emailFormat);
+  }
+  return true;
+}
+
+function hideErrorMessages() {
+  const msgs = document.querySelectorAll('small');
+  msgs.innerHTML = '';
+}
+
+form.addEventListener('submit', (event) => {
+  const email = form.elements.email;
+  const emailValid = validateEmail(email, emailFormat);
+
+  if (emailValid) {
+    hideErrorMessages();
+  } else {
+    event.preventDefault();
+  }
+});
