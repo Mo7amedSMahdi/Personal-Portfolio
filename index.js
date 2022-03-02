@@ -185,22 +185,20 @@ function LoadProjects() {
 document.addEventListener('DOMContentLoaded', LoadProjects, false);
 
 const form = document.getElementById('contactForm');
-const error_message =
-  'Please enter a valid email adress, only lowercase letters are accepted.';
-
+const errorMessage = 'Email address should only be in lowercase letters';
+const errorMessageContainer = document.getElementById('error_message');
 const emailInput = document.getElementById('email');
 form.addEventListener('submit', (event) => {
   const validateRegex = /[A-Z]/;
 
   if (validateRegex.test(emailInput.value)) {
-    const error_message_container = document.getElementById('error_message');
     emailInput.style.border = '1px solid red';
     emailInput.focus();
-    error_message_container.classList.remove('hidden');
-    error_message_container.innerText = error_message;
+    errorMessageContainer.classList.remove('hidden');
+    errorMessageContainer.innerText = errorMessage;
     event.preventDefault();
-  } else if (!error_message_container.className === 'hidden') {
-    error_message_container.classList.add('hidden');
+  } else if (!errorMessageContainer.className === 'hidden') {
+    errorMessageContainer.classList.add('hidden');
     emailInput.style.border = null;
   }
 });
