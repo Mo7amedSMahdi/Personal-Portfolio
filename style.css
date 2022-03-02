@@ -816,6 +816,7 @@ input[type='email']::placeholder {
   backdrop-filter: blur(10px);
   top: 0;
   height: 100%;
+  width: 100%;
   overflow-x: scroll;
   padding: 40px 0;
 }
@@ -864,9 +865,8 @@ input[type='email']::placeholder {
   max-height: 586px;
   margin: 28px 0;
   padding: 0;
-  object-fit: none; /* Do not scale the image */
-  object-position: center;
   border-radius: 8px;
+  height: 100%;
 }
 
 .modal__body {
@@ -883,15 +883,39 @@ input[type='email']::placeholder {
   color: var(--color-text-p);
 }
 
+.modal__description_actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.modal_list {
+  padding: 0;
+  margin: 0;
+}
+
+.modal_list ul {
+  margin: 0;
+}
+
+.devider {
+  height: 2px;
+  background: #ebecf0;
+}
+
 .button__group {
   display: inline-flex;
   gap: 12px;
+  justify-content: center;
+  align-items: center;
 }
+
 .button__group a {
   display: inline-flex;
   gap: 6px;
   align-items: center;
-  padding: 10px;
+  padding: 10px 12px;
   justify-content: center;
   width: max-content;
 }
@@ -904,4 +928,16 @@ input[type='email']::placeholder {
 .icon-github {
   content: url('./images/github-blue.svg');
   margin: 8px 16px;
+}
+
+@media screen and (max-width: 550px) {
+  .modal__body {
+    flex-direction: column;
+  }
+
+  .button__group a {
+    font-size: 13px;
+    gap: 0;
+    padding: 10px;
+  }
 }
