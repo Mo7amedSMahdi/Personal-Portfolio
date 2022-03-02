@@ -185,43 +185,22 @@ function LoadProjects() {
 document.addEventListener('DOMContentLoaded', LoadProjects, false);
 
 const form = document.getElementById('contactForm');
-const emailFormat = 'Please enter a valid email adress';
+const error_message =
+  'Please enter a valid email adress, only lowercase letters are accepted.';
 
-function hasValue(input) {
-  if (input === '') {
-    return false;
-  }
-  return true;
-}
-
-function showMessage(input, message) {
-  const msg = input.parentNode.querySelector('small');
-  msg.innerText = message;
-}
-
-function validateEmail(input, emailFormat) {
-  const email = input.value.trim();
-  if (!hasValue(input.value)) {
-    return false;
-  }
-  if (email.match(/[A-Z]/g)) {
-    return showMessage(input, emailFormat);
-  }
-  return true;
-}
-
-function hideErrorMessages() {
-  const msgs = document.querySelectorAll('small');
-  msgs.innerHTML = '';
-}
-
+const emailInput = document.getElementById('email');
 form.addEventListener('submit', (event) => {
-  const emailInput = form.elements.email;
-  const emailValid = validateEmail(emailInput, emailFormat);
+  const validateRegex = /[A-Z]/;
 
-  if (emailValid) {
-    hideErrorMessages();
-  } else {
+  if (validateRegex.test(emailInput.value)) {
+    const error_message_container = document.getElementById('error_message');
+    emailInput.style.border = '1px solid red';
+    emailInput.focus();
+    error_message_container.classList.remove('hidden');
+    error_message_container.innerText = error_message;
     event.preventDefault();
+  } else if (!error_message_container.className === 'hidden') {
+    error_message_container.classList.add('hidden');
+    emailInput.style.border = null;
   }
 });

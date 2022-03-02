@@ -749,9 +749,11 @@ header {
   border: 1px solid red;
 }
 
-.form__control small {
+.contact__form small {
   color: #731c24;
   margin-bottom: 16px;
+  background-color: #f8d7da;
+  padding: 10px;
 }
 
 .contact__form input[type='text'],
