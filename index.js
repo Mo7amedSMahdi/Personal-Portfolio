@@ -166,7 +166,6 @@ function LoadProjects() {
         </div>`;
     modalContainer.innerHTML = modal;
     modalContainer.classList.remove('hidden');
-    // alert(e.target.getAttribute('data-target'));
     const modalCloseButton = document.getElementById('modalClose');
     modalCloseButton.addEventListener('click', HideModal);
   }
