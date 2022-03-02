@@ -5,6 +5,7 @@ const li = mobileNav.getElementsByTagName('a');
 const cardsContainer = document.getElementById('cardsContainer');
 const buttons = cardsContainer.getElementsByTagName('button');
 const modalContainer = document.getElementById('modal');
+
 let i;
 let j;
 
@@ -182,3 +183,22 @@ function LoadProjects() {
 }
 
 document.addEventListener('DOMContentLoaded', LoadProjects, false);
+
+const form = document.getElementById('contactForm');
+const errorMessage = 'Email address should only be in lowercase letters';
+const errorMessageContainer = document.getElementById('error_message');
+const emailInput = document.getElementById('email');
+form.addEventListener('submit', (event) => {
+  const validateRegex = /[A-Z]/;
+
+  if (validateRegex.test(emailInput.value)) {
+    emailInput.style.border = '1px solid red';
+    emailInput.focus();
+    errorMessageContainer.classList.remove('hidden');
+    errorMessageContainer.innerText = errorMessage;
+    event.preventDefault();
+  } else if (!errorMessageContainer.className === 'hidden') {
+    errorMessageContainer.classList.add('hidden');
+    emailInput.style.border = null;
+  }
+});
