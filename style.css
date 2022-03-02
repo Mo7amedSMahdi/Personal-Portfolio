@@ -300,6 +300,18 @@ header {
 
 /* Works Section */
 
+.works__title {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.37px;
+  color: #091e42;
+  margin-bottom: 6rem;
+}
+
 .work__container-items_container {
   display: grid;
   grid-template-columns: auto;
@@ -414,6 +426,15 @@ header {
   margin: 24px 0;
 }
 
+.button__group a {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 10px 12px;
+  justify-content: center;
+  width: max-content;
+}
+
 .card__body-tags li > a {
   padding: 4px 12px;
   background: #ebebff;
@@ -453,6 +474,11 @@ header {
 }
 
 @media screen and (max-width: 1100px) {
+  .works__title {
+    font-size: 3rem;
+    margin-bottom: 6rem;
+  }
+
   .card__body-img img {
     width: 450px;
     height: 375px;
@@ -460,6 +486,11 @@ header {
 }
 
 @media screen and (max-width: 992px) {
+  .works__title {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
   .card__body-img img {
     width: 400px;
     height: 340px;
@@ -467,6 +498,11 @@ header {
 }
 
 @media screen and (max-width: 550px) {
+  .works__title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
   .work__container-items_container {
     row-gap: 114px;
   }
@@ -579,6 +615,19 @@ header {
   flex-direction: column;
   gap: 16px;
   align-items: start;
+}
+
+.modal__header__top img {
+  cursor: pointer;
+}
+
+.modal__img img {
+  width: 100%;
+  max-height: 586px;
+  margin: 28px 0;
+  padding: 0;
+  border-radius: 8px;
+  height: 100%;
 }
 
 .about__section_skills-languages li > img {
@@ -816,6 +865,7 @@ input[type='email']::placeholder {
   backdrop-filter: blur(10px);
   top: 0;
   height: 100%;
+  width: 100%;
   overflow-x: scroll;
   padding: 40px 0;
 }
@@ -843,10 +893,6 @@ input[type='email']::placeholder {
   color: var(--color-text-title);
 }
 
-.modal__header__top img {
-  cursor: pointer;
-}
-
 .modal__header__content {
   display: flex;
   gap: 26px;
@@ -857,16 +903,6 @@ input[type='email']::placeholder {
 .modal__img {
   padding: 0;
   margin: 0;
-}
-
-.modal__img img {
-  width: 100%;
-  max-height: 586px;
-  margin: 28px 0;
-  padding: 0;
-  object-fit: none; /* Do not scale the image */
-  object-position: center;
-  border-radius: 8px;
 }
 
 .modal__body {
@@ -883,17 +919,32 @@ input[type='email']::placeholder {
   color: var(--color-text-p);
 }
 
+.modal__description_actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.modal_list {
+  padding: 0;
+  margin: 0;
+}
+
+.modal_list ul {
+  margin: 0;
+}
+
+.devider {
+  height: 2px;
+  background: #ebecf0;
+}
+
 .button__group {
   display: inline-flex;
   gap: 12px;
-}
-.button__group a {
-  display: inline-flex;
-  gap: 6px;
-  align-items: center;
-  padding: 10px;
   justify-content: center;
-  width: max-content;
+  align-items: center;
 }
 
 .icon-live {
@@ -904,4 +955,16 @@ input[type='email']::placeholder {
 .icon-github {
   content: url('./images/github-blue.svg');
   margin: 8px 16px;
+}
+
+@media screen and (max-width: 550px) {
+  .modal__body {
+    flex-direction: column;
+  }
+
+  .button__group a {
+    font-size: 13px;
+    gap: 0;
+    padding: 10px;
+  }
 }
