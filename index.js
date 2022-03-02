@@ -216,8 +216,8 @@ function hideErrorMessages() {
 }
 
 form.addEventListener('submit', (event) => {
-  const email = form.elements.email;
-  const emailValid = validateEmail(email, emailFormat);
+  const emailInput = form.elements.email;
+  const emailValid = validateEmail(emailInput, emailFormat);
 
   if (emailValid) {
     hideErrorMessages();
