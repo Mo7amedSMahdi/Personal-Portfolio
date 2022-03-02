@@ -751,6 +751,7 @@ header {
 
 .form__control small {
   color: #731c24;
+  margin-bottom: 16px;
 }
 
 .contact__form input[type='text'],
