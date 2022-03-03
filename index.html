@@ -123,13 +123,14 @@
                 needs coding. I’d love to help with it </p>
             <form id="contactForm" class="contact__form" method="post" action="https://formspree.io/f/xeqngaoy">
                 <div class="form__control">
-                    <input type="text" maxlength="30" name="full_name" placeholder="Full Name" required>
+                    <input id="full_name" type="text" maxlength="30" name="full_name" placeholder="Full Name" required>
                 </div>
                 <div class="form__control">
                     <input id="email" type="email" name="email" placeholder="Email Address" required>
                 </div>
                 <div class="form__control">
-                    <textarea name="msg" placeholder="Write your message here " maxlength="500" required></textarea>
+                    <textarea id="msg" name="msg" placeholder="Write your message here " maxlength="500"
+                        required></textarea>
                 </div>
                 <small id="error_message" class="hidden"></small>
                 <button type="submit" class="btn--submit">Get It Touch</button>

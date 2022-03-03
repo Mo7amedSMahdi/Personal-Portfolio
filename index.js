@@ -202,3 +202,38 @@ form.addEventListener('submit', (event) => {
     emailInput.style.border = null;
   }
 });
+
+const inputName = document.getElementById('full_name');
+const inputEmail = document.getElementById('email');
+const inputMsg = document.getElementById('msg');
+const key = 'CONTACT_FORM_DATA';
+const inputs = [inputName, inputEmail, inputMsg];
+
+function setFormData() {
+  const contactFormData = JSON.parse(localStorage.getItem(key));
+  inputName.value = contactFormData.full_name;
+  inputEmail.value = contactFormData.email;
+  inputMsg.value = contactFormData.msg;
+}
+
+function SaveInputsData() {
+  const contactFormData = {};
+  for (i = 0; i < inputs.length; i += 1) {
+    contactFormData[inputs[i].id] = inputs[i].value;
+  }
+  localStorage.setItem(key, JSON.stringify(contactFormData));
+}
+
+function checkSavedData() {
+  if (!localStorage.getItem(key)) {
+    SaveInputsData();
+  } else {
+    setFormData();
+  }
+}
+
+checkSavedData();
+
+inputName.setAttribute('onchange', 'SaveInputsData()');
+inputEmail.setAttribute('onchange', 'SaveInputsData()');
+inputMsg.setAttribute('onchange', 'SaveInputsData()');
