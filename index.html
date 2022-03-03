@@ -21,14 +21,14 @@
     <header class="flex">
         <a class="heder__logo" href="#"><img src="./images/logo.png" alt="website logo" /></a>
         <nav>
-            <ul class="nav nav-desktop">
+            <ul class="nav nav-desktop hidden">
                 <li><a href="">Portoflio</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>
 
-        <button id="btn-menu" class="btn btn--icon hidden" data-toggle="collapse" data-target="#"><i
+        <button id="btn-menu" class="btn btn--icon" data-toggle="collapse" data-target="#"><i
                 class="icon icon-menu"></i></button>
         <nav class="hidden">
             <ul class="nav nav-mobile hidden">
@@ -39,13 +39,14 @@
         </nav>
     </header>
     <main>
-        <section id="hero" class="hero">
+        <section id="hero" class="hero flex column">
             <div class="hero__title">
-                <h1>I’m Alexandra
+                <h1 class="section--title">I’m Mohammed
                     Glad to see you!</h1>
             </div>
             <div class="hero__content">
-                <p>I’m a software developer! I can help you build a product , feature or website Look through some of my
+                <p class="section--peragraph">I’m a software developer! I can help you build a product , feature or
+                    website Look through some of my
                     work and
                     experience! If you like what you see and have a project you need coded, don’t hestiate to contact
                     me.</p>
@@ -54,12 +55,12 @@
                 <button class="btn btn--text">LET’S CONNECT</button>
             </div>
             <div class="social__links">
-                <ul>
-                    <li><a href=""><img src="" alt="twitter"></a></li>
-                    <li><a href=""><img src="" alt="linkedin"></a></li>
-                    <li><a href=""><img src="" alt="medium"></a></li>
-                    <li><a href=""><img src="" alt="github"></a></li>
-                    <li><a href=""><img src="" alt="angellist"></a></li>
+                <ul class="nav nav--social">
+                    <li><a href=""><img src="./images/twitter.svg" alt="twitter"></a></li>
+                    <li><a href=""><img src="./images/Linkedin.svg" alt="linkedin"></a></li>
+                    <li><a href=""><img src="./images/medium.svg" alt="medium"></a></li>
+                    <li><a href=""><img src="./images/github.svg" alt="github"></a></li>
+                    <li><a href=""><img src="./images/angellist.svg" alt="angellist"></a></li>
                 </ul>
             </div>
         </section>
